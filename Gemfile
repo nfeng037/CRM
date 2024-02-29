@@ -73,3 +73,7 @@ gem "devise", "~> 4.9"
 gem "faker", "~> 3.2"
 
 gem "sassc-rails", "~> 2.1"
+
+gem "bulma", "~> 0.1.0"
+
+gem "bulma-rails", "~> 0.9.4"

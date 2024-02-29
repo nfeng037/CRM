@@ -1,2 +1,8 @@
-<h1>Customers#index</h1>
-<p>Find me in app/views/customers/index.html.erb</p>
+<section class="section">
+  <div class="container">
+    <h1 class="title">All Customers</h1>
+    <div class="columns">
+      <%= render partial: "customer", collection: @customers, as: :customer %>
+    </div>
+  </div>
+</section>
