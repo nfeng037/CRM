@@ -1,22 +1,17 @@
-<div class="card">
-  <div class="card-image">
+<div class="column m-2 p-2">
+  <div class="card">
+    <div class="card-image">
       <% if customer.image.attached? %>
-        <%= image_tag customer.image, class: "customer-image" %>
+        <%= image_tag customer.image, alt: "#{customer.full_name} profile picture" %>
       <% end %>
-    </figure>
-  </div>
-  <div class="card-content">
-    <div class="media">
-
-      <div class="media-content">
-        <p class="title is-4"><%= customer.full_name %></p>
-        <p class="subtitle is-6"><%= customer.email %></p>
-        <p>Tel:<%= customer.phone_number %></p>
-      </div>
     </div>
-
-    <div class="content">
-    <p class="subtitle is-6"><%= customer.notes %></p>
+    <div class="card-content">
+      <div class="content">
+        <p class="title"><%= customer.full_name %></p>
+        <p>Tel:<%= customer.phone_number %></p>
+        <p><%= customer.notes %></p>
+        <p>Email: <%= customer.email.presence || "N/A" %></p>
+      </div>
     </div>
   </div>
 </div>

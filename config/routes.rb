@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root "customers#index"
   get "/customers", to: "customers#index"
+  get "/customers/alphabetized", to: "customers#alphabetized"
 end
