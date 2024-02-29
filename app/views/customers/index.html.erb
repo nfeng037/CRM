@@ -1,4 +1,14 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      <%= link_to 'Missing Email Customers', customers_missing_email_path, class: "navbar-item" %>
+      <%= link_to 'Alphabetized Customers', customers_alphabetized_path, class: "navbar-item" %>
+    </div>
+  </div>
+</nav>
+
 <h1 class="title">All Customers</h1>
+
 <div class="columns">
   <%= render partial: "customer", collection: @customers, as: :customer %>
 </div>

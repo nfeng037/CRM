@@ -12,3 +12,11 @@
 h1 {
   margin: 20px;
 }
+
+nav {
+  margin: 20px;
+}
+
+nav a {
+  padding-right: 10px;
+}
