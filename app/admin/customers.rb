@@ -1,9 +1,9 @@
 ActiveAdmin.register Customer do
-  actions :index, :edit, :update, :create, :new, :destroy
-
   permit_params :full_name, :phone_number, :email, :notes, :image
 
   index do
+    selectable_column
+    id_column
     column :full_name
     column :phone_number
     column :email
